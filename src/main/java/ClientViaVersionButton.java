@@ -15,7 +15,7 @@ public abstract class ClientViaVersionButton extends Button {
 		super(id, x, y, width, height, label, enabled);
 	}
 
-	/*public void a(bib mc, int mouseX, int mouseY, float partialTicks) {
+	public void a(bib mc, int mouseX, int mouseY, float partialTicks) {
 		if (onPreDraw(mouseX, mouseY)) {
 			super.a(mc, mouseX, mouseY, partialTicks);
 		}
@@ -32,7 +32,7 @@ public abstract class ClientViaVersionButton extends Button {
 			return true;
 		}
 		return false;
-	}*/
+	}
 
 	public boolean isHovered(int mouseX, int mouseY) {
 		return this.isEnabled() && this.isVisible() && mouseX >= this.getX() && mouseY >= this.getY() && mouseX < this.getX() + this.getWidth() && mouseY < this.getY() + this.getHeight();
